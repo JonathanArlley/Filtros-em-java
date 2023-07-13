@@ -32,8 +32,6 @@ public class Main {
             System.out.println("9- Brilho Multiplicativo");
             System.out.println("10- Negativo ");
             System.out.println("11- Imagem Original ");
-            System.out.println("12- Cinza Verde  ");
-            System.out.println("13- Cinza Azul ");
             System.out.println(" Digite uma opção: ");
             int numero = teclado.nextInt();
 
@@ -126,7 +124,7 @@ public class Main {
 
            // BufferedImage img  = new BufferedImage(img,gaussian);
 
-            if (ImageIO.write(imgSaida, "jpg", new File ("C:/Users/Jonat/Desktop/Imagens Pdi/Lena 512 003.png") )){
+            if (ImageIO.write(imgSaida, "jpg", new File () )){
                     System.out.println("Imagem salva com sucesso");
             }
             else {
