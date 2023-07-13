@@ -13,15 +13,15 @@ public class Main {
 
 
 
-            File arquivo = new File("C:/Users/Jonat/Desktop/Imagens Pdi/Lena 512 003.png");
+            File arquivo = new File();
             BufferedImage imagemOriginal = ImageIO.read(arquivo);
 
             BufferedImage imgSaida = ProcessarImagem.media(imagemOriginal);
 
-            /*ProcessarImagem filtro = new ProcessarImagem("C:/Users/Jonat/Desktop/Imagens Pdi/tulips origi.png");
+            ProcessarImagem filtro = new ProcessarImagem();
             Scanner teclado = new Scanner(System.in);*/
 
-            /*System.out.println("1- Banda Vermelha ");
+            System.out.println("1- Banda Vermelha ");
             System.out.println("2- Banda Verde ");
             System.out.println("3- Banda Azul ");
             System.out.println("4- Band/a Cinza Medio ");
@@ -40,79 +40,79 @@ public class Main {
             switch (numero) {
                 case 1: {
                     System.out.println("Banda Vermelha");
-                    filtro.bandaVermelho("C:/Users/Jonat/Desktop/Imagens Pdi/bandaVermelha.png");
+                    filtro.bandaVermelho();
                     break;
                 }
                 case 2: {
                     System.out.println("Banda Verde");
-                    filtro.bandaVerde("C:/Users/Jonat/Desktop/Imagens Pdi/bandaVerde .png");
+                    filtro.bandaVerde();
                     break;
                 }
                 case 3: {
                     System.out.println("Banda Azul");
-                    filtro.bandaAzul("C:/Users/Jonat/Desktop/Imagens Pdi/bandaAzul .png");
+                    filtro.bandaAzul();
                     break;
                 }
                 case 4: {
                     System.out.println("Banda Cinza Médio");
-                    filtro.cinzaMedio("C:/Users/Jonat/Desktop/Imagens Pdi/cinzaMedio.png");
+                    filtro.cinzaMedio();
                     break;
                 }
                 case 5: {
                     System.out.println("Banda Cinza Derivado");
-                    filtro.cinzaDerivado("C:/Users/Jonat/Desktop/Imagens Pdi/CinzaDerivado .png", "Vermelho");
+                    filtro.cinzaDerivado();
                     break;
                 }
 
                 case 6: {
                     System.out.println("Limiarização");
-                    filtro.limiarizacao("C:/Users/Jonat/Desktop/Imagens Pdi Limiarização.png", 255);
+                    filtro.limiarizacao();
                     break;
                 }
                 case 7: {
                     System.out.println("Aumento de Tonalidade");
-                    filtro.subirTom("C:/Users/Jonat/Desktop/Imagens Pdi/AumentoTonalidadeVermeleho.png", "Vermelho", 255);
-                    filtro.subirTom("C:/Users/Jonat/Desktop/Imagens Pdi/AumentoTonalidadeVerde .png", "Verde", 180);
-                    filtro.subirTom("C:/Users/Jonat/Desktop/Imagens Pdi/AumentoTonalidadeAzul .png", "Azul", 128);
+                    filtro.subirTom();
+                    filtro.subirTom();
+                    filtro.subirTom();
                     break;
                 }
                 case 8: {
                     System.out.println("Brilho Aditivo");
-                    filtro.brilhoAditivo("C:/Users/Jonat/Desktop/Imagens Pdi/BrilhoAditivo.png", 200);
+                    filtro.brilhoAditivo();
                     break;
                 }
                 case 9: {
                     System.out.println("Brilho Multiplicativo");
-                    filtro.brilhoMultiplicativo("C:/Users/Jonat/Desktop/Imagens Pdi/BrilhoMultiplicativo.png", 198);
+                    filtro.brilhoMultiplicativo();
                     break;
                 }
 
 
                 case 10: {
                     System.out.println("Negativo");
-                    filtro.negativo("C:/Users/Jonat/Desktop/Imagens Pdi/Negativo.png");
+                    filtro.negativo();
                     break;
                 }
 
                 case 11: {
                     System.out.println("Imagem Original");
-                    filtro.imagemOrigi("C:/Users/Jonat/Desktop/Imagens Pdi/ImagemOrigi.png");
+                    filtro.imagemOrigi();
                     break;
                 }
 
             
             case 12: {
                 System.out.println("Banda Cinza Derivado");
-                filtro.cinzaDerivado("C:/Users/Jonat/Desktop/Imagens Pdi/CinzaVerde .png", "Verde");
+                filtro.cinzaDerivado();
                 break;
             }
             case 13: {
                 System.out.println("Banda Cinza Derivado");
-                filtro.cinzaDerivado("C:/Users/Jonat/Desktop/Imagens Pdi/CinzaAzul .png", "Azul");
+                filtro.cinzaDerivado();
                 break;
             }
 
-        }*/
+        }
             double [][] gaussian = new  double [3][3];
             gaussian[0][0] = 0.0625;
             gaussian[1][0] = 0.125;
